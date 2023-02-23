@@ -1,0 +1,18 @@
+.group-sale__header {
+    background-color: #fcf2e7;
+    text-align: left;
+}
+
+.group-sale__header-text {
+    color: #ff7b01;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 10px 5px;
+}
+
+.group-sale__body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+

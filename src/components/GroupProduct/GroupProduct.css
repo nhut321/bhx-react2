@@ -1,0 +1,18 @@
+.group-product__header {
+    background-color: #6f9972;
+    text-align: left;
+}
+
+.group-product__header-text {
+    color: white;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 10px 5px;
+}
+
+.group-product__body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+

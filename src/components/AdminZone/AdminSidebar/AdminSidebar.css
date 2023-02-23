@@ -1,0 +1,23 @@
+.admin-sidebar {
+    width: 200px;
+    position: fixed;
+    bottom: 0;
+    top: 50px;
+    border-right: 1px solid #e7e7e7;
+}
+
+.admin-sidebar__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-bottom: 1px solid #e7e7e7;
+    background-color: white;
+    cursor: pointer;
+}
+
+.admin-sidebar__item.active {
+    background-color: var(--primary-color);
+    color: white;
+    border: 1px solid;
+}

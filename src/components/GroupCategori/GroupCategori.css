@@ -1,0 +1,43 @@
+.group-categori {
+    background-color: white;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.group-categori__text {
+    text-align: left;
+    font-weight: bold;
+    padding: 10px;
+
+}
+
+.group-categori__text p {
+    margin: 0px;
+}
+
+.group-categori__list {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    list-style: none;
+    padding: 0 0 15px 0;
+    flex-wrap: wrap;
+}
+
+.group-categori__item {
+    width: 95px;
+    padding: 0 15px;
+    font-size: 14px;
+    /* margin-right: 15px; */
+}
+
+.group-categori__item .item-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.group-categori__item .item-link img {
+    width: 45px;
+}
+

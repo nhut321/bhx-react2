@@ -1,0 +1,38 @@
+.add-product > h1 {
+    padding: 20px;
+}
+
+.add-product__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.add-product__list {
+    width: 50%;
+}
+
+.add-product__item {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.add-product__item input,
+.add-product__item textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #a9a8a8;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.add-product__item input:focus,
+.add-product__item textarea:focus {
+    outline: none;
+}
+
+.add-product__item textarea {
+    height: 100px;
+}
