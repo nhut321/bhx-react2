@@ -22,12 +22,10 @@ export default function Home() {
         <div className="home">
             <SliderHero />
             <GroupCategori />
-            <GroupSale />
-            <GroupProduct id={1} />
-            <GroupProduct id={2} />
-            <GroupProduct id={14} />
-            {/* <GroupProduct />
-            <GroupProduct /> */}
+            {/* <GroupSale /> */}
+            <GroupProduct id={1} title={'thịt cá trứng hải sản'} />
+            <GroupProduct id={2} title={'rau củ, trái căy'} />
+            <GroupProduct id={14} title={'chăm sóc thú cưng'} />
         </div>
     )
 }

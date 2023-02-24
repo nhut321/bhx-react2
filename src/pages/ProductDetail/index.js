@@ -31,7 +31,6 @@ export default function ProductDetail() {
         fetchData()
     },[])
 
-    console.log(detail)
     
     return (
         <div className="product-detail mg-10">
@@ -49,7 +48,7 @@ export default function ProductDetail() {
                         <p>{detail.name != '' ? detail.name : "name ne"}</p>
                     </div>
                     <div className="top-right__date">Còn 11 tháng</div>
-                    <div className="top-right__price">{detail.price != '' ? detail.price : 999.999}<sup>đ</sup></div>
+                    <div className="top-right__price">{detail.price != '' ? detail.price.toLocaleString() : 999.999}<sup>đ</sup></div>
                     <div className="top-right__button">
                         <button className='button primary'>Chọn mua</button>
                     </div>

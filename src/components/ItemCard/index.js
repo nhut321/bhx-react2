@@ -17,7 +17,7 @@ export default function ItemCard({info}) {
 
                 </Link>
                 <div className="item-card__price">
-                    {info ? info.price : '999.000'}<sup>đ</sup>
+                    {info ? info.price.toLocaleString() : '999.000'}<sup>đ</sup>
                 </div>
                 <div className="item-card__button">
                     <button className='button'>Chọn mua </button>

@@ -4,7 +4,7 @@ import { baseUrl } from '../../config/baseUrl'
 import ItemCard from '../ItemCard'
 import './GroupProduct.css'
 
-export default function GroupProduct({id}) {
+export default function GroupProduct({id, title}) {
     const [itemCard, setItemCard] = useState([])
     useEffect(()=> {
         async function fetchData() {
@@ -14,31 +14,20 @@ export default function GroupProduct({id}) {
         console.log(123)
         fetchData()
     },[])
+    console.log(title)
     return (
         <div className="group-product mg-10">
             <div className="group-product__header">
-                <h3 className="group-product__header-text">sản phẩm khuyến mãi</h3>
+                <h3 className="group-product__header-text">{title}</h3>
             </div>
             <div className="group-product__body">
                 {
-                    // item.map((v,i) => {
-                    //     return (
-                    //         <ItemCard key={i} info={v}/>
-                    //     )
-                    // })
                     itemCard.map((v,i) => {
                         return (
                             <ItemCard key={i} info={v} />
                         )
                     })
                 }
-                {/* <ItemCard />
-                <ItemCard />
-                <ItemCard />
-                <ItemCard />
-                <ItemCard />
-                <ItemCard />
-                <ItemCard /> */}
             </div>
         </div>
     )

@@ -14,7 +14,7 @@ export default function AdminAddProduct() {
         code: '',
         image: '',
         description: '',
-        sale: ''
+        // sale: ''
     })
 
     function onChangeInput(e) {
@@ -45,7 +45,8 @@ export default function AdminAddProduct() {
                 code: '',
                 image: '',
                 description: '',
-                sale: ''
+                // sale: ''
+                groupId: ''
             }
         })
     }
@@ -69,6 +70,10 @@ export default function AdminAddProduct() {
                         <input value={newProduct.groupName} name='groupName' type="text" onChange={e => onChangeInput(e)} />
                     </div>
                     <div className="add-product__item">
+                        <label>group id</label>
+                        <input value={newProduct.groupId} name='groupId' type="text" onChange={e => onChangeInput(e)} />
+                    </div>
+                    <div className="add-product__item">
                         <label>Hạn sử dụng</label>
                         <input value={newProduct.date} name='date' type="date" onChange={e => onChangeInput(e)} />
                     </div>
@@ -88,10 +93,10 @@ export default function AdminAddProduct() {
                         <label>Hình ảnh</label>
                         <input value={newProduct.image} name='image' type="text" onChange={e => onChangeInput(e)} />
                     </div>
-                    <div className="add-product__item">
+                    {/* <div className="add-product__item">
                         <label>Sale</label>
                         <input value={newProduct.sale} name='sale' type="radio" onChange={e => onChangeInput(e)} />
-                    </div>
+                    </div> */}
                     <div className="add-product__item">
                         <label>Thông tin sản phẩm</label>
                         <textarea value={newProduct.description} name='description' type="text" onChange={e => onChangeInput(e)} />
